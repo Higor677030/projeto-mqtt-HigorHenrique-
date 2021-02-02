@@ -3,7 +3,7 @@
 
 # Objetivo
 O objetivo do projeto é fazer uma ferramenta de alerta e monitoramento utilizando um Arduino Uno e um sensor Magnético para o monitoramento da porta de um RACK de rede, desta forma tendo um retorno remoto do estado da porta que pode ser Aberto ou Fechado. Essa informação é enviada pela internet utilizando o protocolo MQTT (Message Queuing Telemetry Transport) para um outro servidor hospedado na AWS (Amazon Web Service) que exibe a mensagem no aplicativo para SmartPhone MQTT Dash conforme a imagem e anexo:
-(https://user-images.githubusercontent.com/73251227/106644250-9fafc480-6569-11eb-81d9-82ff9a5cc126.PNG)
+![topologia](https://user-images.githubusercontent.com/73251227/106644250-9fafc480-6569-11eb-81d9-82ff9a5cc126.PNG)
 No Arduino as bibliotecas são trechos de softwere utilizados para funções especificas e neste projeto utilizamos as seguintes biblotecas:
 (https://github.com/UIPEthernet/UIPEthernet)
 (https://github.com/knolleary/pubsubclient)
