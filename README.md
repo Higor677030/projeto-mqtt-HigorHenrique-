@@ -9,8 +9,12 @@ No Arduino as bibliotecas são trechos de softwere utilizados para funções esp
 [PubsubClient](https://github.com/knolleary/pubsubclient)
 # Materiais utilizados no projeto
 [Arudino uno](https://www.arduino.cc/)
+
 [Módulo Ethernet (ENC28J60)](https://www.arduino.cc/search?q=M%C3%B3dulo%20Ethernet%20%28ENC28J60%29)
+
 [Sensor Magnético (MC-38)](https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-magnetico-com-fio-para-alarme-mc-38/)
+
 [Jumpers](https://www.arduino.cc/search?q=jumpers&tab=store)
+
 # Circuito
-[circuito](https://user-images.githubusercontent.com/73251227/106649666-ab52b980-6570-11eb-98f2-cba4f8a6c201.PNG)
+![circuito](https://user-images.githubusercontent.com/73251227/106649666-ab52b980-6570-11eb-98f2-cba4f8a6c201.PNG)
