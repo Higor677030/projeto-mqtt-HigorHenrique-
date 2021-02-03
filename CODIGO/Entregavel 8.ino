@@ -23,7 +23,7 @@ void setup() {
   Serial.begin(9600);
   pinMode(pino2,INPUT_PULLUP);
 
-  mqttClient.setServer("3.82.94.158",1883);
+  mqttClient.setServer("54.144.190.205",1883);
   
   Serial.print("o IP do arduino e: ");
   Serial.println(Ethernet.localIP());
@@ -34,7 +34,7 @@ void setup() {
   Serial.print("O Gateway do Arduino e: ");
   Serial.println(Ethernet.gatewayIP());
 
-  delay(5000);
+  
    
 }
 
@@ -44,23 +44,31 @@ void loop() {
   mqttClient.connect("HigorHenrique");
   estado_sensor = digitalRead(pino2);
 
-  /*mensagem = mqttClient.publish("","");
-  mqttClient.loop();
-  delay(500);*/
+  
 
   if(estado_sensor == 0)
   {
-    mensagem = mqttClient.publish("ABERTA","1");
+   Serial.println("o rack esta fechado");
+    mensagem = mqttClient.publish("HigorHenrique","FECHADO!");
+    Serial.println(mensagem);
+      mqttClient.loop();
+      
 
 
   }
   else{
-        mensagem = mqttClient.publish("FECHADA","0");
+    Serial.println("o rack esta aberto ");
+   mensagem = mqttClient.publish("HigorHenrique","ABERTO!");
+   Serial.println(mensagem);
+      mqttClient.loop();
+      
+   
+        
 
 
   }
 
     mqttClient.loop();
-    delay(500);
+    
 
 }
